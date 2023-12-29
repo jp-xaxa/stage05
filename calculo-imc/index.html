@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cálculo IMC</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="./js/main.js" defer type="module"></script>
+  </head>
+  <body>
+    <section class="notNumber">
+      <p>Digite somente números</p>
+    </section>
+
+    <section class="notFinite">
+      <p>A altura não pode ser 0</p>
+    </section>
+
+    <main>
+      <section>
+        <h1>Cálculo de IMC</h1>
+        <form>
+          <div class="input-wrapper">
+            <div class="wrapper">
+              <label for="value-weight">Peso (kg)</label>
+              <input
+                type="text"
+                id="value-weight"
+                placeholder="Somente números"
+              />
+            </div>
+
+            <div class="wrapper">
+              <label for="value-height">Altura (cm)</label>
+              <input
+                type="text"
+                id="value-height"
+                placeholder="Somente números"
+              />
+            </div>
+
+            <button type="submit">
+              Calcular IMC
+              <img
+                src="./assets/Vector.svg"
+                alt="Seta apontando para a direita"
+              />
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <section class="modal hide">
+      <div class="modal-info">
+        <p class="exbit-modal">Seu IMC é de X</p>
+        <img
+          src="./assets/VectorX.svg"
+          alt="Icone de um X"
+          class="close-modal"
+        />
+      </div>
+    </section>
+  </body>
+</html>

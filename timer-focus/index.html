@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer Focus</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-svg" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="./src/script.js" defer type="module"></script>
+  </head>
+  <body>
+    <main>
+      <audio src=""></audio>
+      <button id="mode-controls">
+        <span class="sr-only">Ativar Ligth mode</span>
+        <i class="ph-bold ph-sun"></i>
+        <i class="ph-bold ph-moon"></i>
+      </button>
+
+      <div id="timer">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </div>
+      <div id="controls">
+        <i data-action="toggleRunning" class="ph ph-play-circle"
+          ><span class="sr-only">Iniciar tempo</span></i
+        >
+
+        <i data-action="toggleRunning" class="ph ph-pause-circle"
+          ><span class="sr-only">Pausar tempo</span></i
+        >
+
+        <i data-action="set" class="ph ph-timer"
+          ><span class="sr-only">Ajustar tempo</span></i
+        >
+
+        <i data-action="reset" class="ph ph-stop-circle"
+          ><span class="sr-only">Reiniciar tempo</span></i
+        >
+
+        <i data-action="toggleMusic" class="ph ph-speaker-none"
+          ><span class="sr-only">Ativar música de fundo</span></i
+        >
+
+        <i data-action="toggleMusic" class="ph ph-speaker-high"
+          ><span class="sr-only">Desativar música de fundo</span></i
+        >
+      </div>
+    </main>
+  </body>
+</html>

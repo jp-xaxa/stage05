@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(40%, 2vw + 1%, 62.5%);
+  font-family: "Roboto", sans-serif;
+
+  --color-background: #1e1e1e;
+  --color-background-2: #242424;
+  --color-text: #f8f8fc;
+  --color-blue: #42d3ff;
+}
+
+.light {
+  --color-background: #f8f8fc;
+  --color-background-2: #242424;
+  --color-text: #121214;
+  --color-blue: #42d3ff;
+}
+
+body {
+  background: var(--color-background);
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 1.6rem;
+
+  position: relative;
+}
+
+#mode-controls {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 3.2rem;
+  right: 3.2rem;
+  cursor: pointer;
+  font-size: 3.2rem;
+  color: var(--color-text);
+}
+
+/*class para controlar os icones do projeto e ações.*/
+.running .ph-play-circle,
+.running .ph-timer,
+.music-on .ph-speaker-none,
+.light .ph-sun,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle,
+html:not(.music-on) .ph-speaker-high,
+html:not(.light) .ph-moon {
+  display: none;
+}
+
+#timer {
+  color: var(--color-text);
+  font-size: 9.6rem;
+  font-weight: 700;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+}
+
+#controls {
+  display: flex;
+  gap: 1.6rem;
+  padding: 2.2rem 4rem;
+  place-content: center;
+
+  background: var(--color-background-2);
+  border-radius: 9999px;
+}
+
+#controls i {
+  font-size: 6.4rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#controls i:hover {
+  color: var(--color-blue);
+}
+
+#controls .ph-speaker-high {
+  color: var(--color-blue);
+}
+
+/*Class para criação de acessibilidade das componentes*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  appearance: none;
+  border: 0;
+}

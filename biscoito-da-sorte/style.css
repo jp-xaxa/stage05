@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-text: #34355b;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+
+  display: flex;
+  align-items: center;
+
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+.hide {
+  display: none;
+}
+
+/*Primeira página*/
+main {
+  width: 43rem;
+  margin: auto;
+  padding: 4.8rem 6.4rem;
+
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2rem 5rem rgba(0, 0, 0, 0.8);
+}
+
+section {
+  text-align: center;
+}
+
+section h1 {
+  color: var(--color-text);
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+section p {
+  color: var(--color-text);
+  font-size: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+
+  margin: 1.4rem 0 2rem;
+}
+
+#open-cookie {
+  cursor: pointer;
+}
+
+#open-cookie:hover {
+  animation: vibration 0.3s infinite;
+}
+
+/*Segunda página*/
+.message {
+  color: black;
+  font-size: 2.4rem;
+  font-family: "Dancing Script", cursive;
+
+  padding: 1rem;
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.7rem 0 1.7rem;
+
+  animation: appear 1s ease-out;
+}
+
+.open {
+  padding: 4rem 0;
+}
+
+button {
+  background: #ff9500;
+  padding: 1.6rem;
+  margin-top: 1.7rem;
+  border: none;
+  border-radius: 0.4rem;
+
+  color: white;
+  font-size: 1.5rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: #d47c00;
+  transform: scale(1.05);
+}
+
+/*Animações*/
+/*Biscoito*/
+@keyframes vibration {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px) rotate(1deg);
+  }
+  50% {
+    transform: translateX(2px) rotate(-1deg);
+  }
+  75% {
+    transform: translateX(-2px) rotate(1deg);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*Mensagem aparecendo*/
+@keyframes appear {
+  0% {
+    transform: translateY(100%) scale(0.3);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/*Cor de fundo*/
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

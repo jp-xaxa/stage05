@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-title: #34355b;
+  --color-white: #ffffff;
+  --color-fundo-one: linear-gradient(288deg, #c2e9fb 0%, #dedede 100%);
+  --color-fundo-two: linear-gradient(108deg, #c2e9fb 0%, #a1c4fd 100%);
+  --color-input-fundo: #dce2e9;
+  --color-button-fundo: #7879f1;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+
+  background: var(--color-fundo-one);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+main {
+  background: var(--color-white);
+  width: min(42rem, 90%);
+  padding: 4.8rem 6.4rem;
+  margin-top: 10rem;
+
+  box-shadow: 0px 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+}
+
+button {
+  background: var(--color-button-fundo);
+  padding: 1.6rem;
+
+  border: none;
+  border-radius: 0 0.4rem 0.4rem 0;
+
+  color: var(--color-white);
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: var(--color-title);
+}
+
+.hide {
+  display: none;
+}
+
+/*Estilização da primeira tela*/
+.infos {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.titleAndText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  text-align: center;
+}
+
+.infos h1 {
+  font-size: 2.4rem;
+  color: var(--color-title);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.infos p {
+  color: var(--color-title);
+  opacity: 0.8;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+form {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+form input {
+  background: var(--color-input-fundo);
+  padding: 1.6rem;
+  max-width: 7rem;
+
+  border: none;
+  border-radius: 0.4rem 0 0 0.4rem;
+  margin: 0;
+
+  color: var(--color-title);
+  font-size: 1.6rem;
+  font-family: DM Sans;
+  font-weight: 400;
+  text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+form input:focus {
+  outline: none;
+}
+
+/*Estilização da segunda tela*/
+.screenTwo {
+  text-align: center;
+}
+
+.screenTwo h1 {
+  color: var(--color-title);
+  font-size: 2.4rem;
+  font-family: DM Sans;
+  font-weight: 400;
+  line-height: 3.6rem;
+
+  margin-bottom: 3.3rem;
+}
+
+.screenTwo button {
+  max-width: fit-content;
+  margin: auto;
+
+  border-radius: 0.4rem;
+}
