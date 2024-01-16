@@ -6,8 +6,7 @@ Criação site web que simula um cronometro de no máximo 60 minutos seguindo as
 
 <p align="center">
   <a href="#🚀-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#💻-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#🔖-layout">Layout</a>&nbsp;&nbsp;&nbsp;
+  <a href="#💻-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
@@ -31,10 +30,3 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O Timer Focus é um projeto que tem como objetivo ensinar os fundamentos essenciais do JavaScript com foco em funções e manipulação do DOM para a criação da lógica do cronometro, fundamentos de ES MODULEs para o uso de import e exporte de arquivos do tipo .js. Além disso, concentramos nossos esforços em garantir que o código seja desenvolvido de maneira semanticamente correta e claro.
 
 - [Acesse o projeto finalizado, online](https://jp-xaxa.github.io/stage05/timer-focus/)
-
-## 🔖 Layout
-
-Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/file/ubpABYy2OewsKbNsoOb174/Jogo-Adivinha%C3%A7%C3%A3o-(Copy)?type=design&node-id=0-1&mode=design&t=KW2gyto53t2zD8Ef-0>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
-<img alt="Layout Figma" src="./assets/figma-dark-mode.png" width="100%">
-<img alt="Layout Figma" src="./assets/figma-light-mode.png" width="100%">
