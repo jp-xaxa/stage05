@@ -34,10 +34,3 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O site Biscoito da Sorte é um projeto que tem como objetivo ensinar os fundamentos essenciais do JavaScript com foco em funções e manipulação do DOM para a criação da lógica da mensagem do biscoito e fundamentos essenciais do CSS para fazer animações. Além disso, concentramos nossos esforços em garantir que o código seja desenvolvido de maneira semanticamente correta e claro.
 
 - [Acesse o projeto finalizado, online](https://jp-xaxa.github.io/stage05/biscoito-da-sorte/)
-
-## 🔖 Layout
-
-Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/file/ubpABYy2OewsKbNsoOb174/Jogo-Adivinha%C3%A7%C3%A3o-(Copy)?type=design&node-id=0-1&mode=design&t=KW2gyto53t2zD8Ef-0>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
-<img alt="Layout Figma" src="./assets/figma-parte1.png" width="100%">
-<img alt="Layout Figma" src="./assets/figma-parte2.png" width="100%">
