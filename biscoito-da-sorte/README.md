@@ -6,8 +6,7 @@ Criação de um site web que simula um biscoito da sorte seguindo as instruçõe
 
 <p align="center">
   <a href="#🚀-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#💻-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#🔖-layout">Layout</a>&nbsp;&nbsp;&nbsp;
+  <a href="#💻-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
